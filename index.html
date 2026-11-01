@@ -56,6 +56,13 @@
     text-decoration: none;
   }
   .links a:hover, .links a:focus { background: var(--cyan); color: var(--bg); }
+  .links a.play {
+    background: var(--cyan);
+    color: var(--bg);
+    font-weight: 700;
+    box-shadow: 0 0 16px rgba(63, 242, 255, 0.6);
+  }
+  .links a.play:hover, .links a.play:focus { background: var(--text); border-color: var(--text); }
   .spark { color: var(--yellow); text-shadow: 0 0 8px var(--yellow); }
   footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
   footer a { color: var(--cyan); }
@@ -71,7 +78,7 @@
     <p>Drag your dot, collect <span class="spark">sparks</span>, and avoid the ghosts of your own past.
       Every 10 seconds a new ghost replays your old moves.</p>
     <div class="links">
-      <!-- Add your Google Play link here once the game is published. -->
+      <a class="play" href="https://play.google.com/store/apps/details?id=com.studiozazu.dejame">▶ Get it on Google Play</a>
       <a href="privacy.html">Privacy Policy</a>
     </div>
   </section>
